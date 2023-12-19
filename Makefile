@@ -1,5 +1,8 @@
 all: test
 
+run: test
+	./$<
+
 test: test.c
 	${CC} $^ -o $@
 
